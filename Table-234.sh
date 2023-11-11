@@ -12,7 +12,7 @@ do
         do
           for GNNCONV in GraphConv SAGEConv GCNConv GATConv 
           do
-            python3 main.py --Conditional True --SCORE $SCORE --GNNCONV GraphConv --CP_or_CQR $CP_or_CQR --DiGAE_or_GAE_or_LGNN $DiGAE_or_GAE_or_LGNN --SEEDNUM 1 --Weighted $Weighted --Dataset $Dataset
+            python3 code/main.py --Conditional True --SCORE $SCORE --GNNCONV GraphConv --CP_or_CQR $CP_or_CQR --DiGAE_or_GAE_or_LGNN $DiGAE_or_GAE_or_LGNN --SEEDNUM 1 --Weighted $Weighted --Dataset $Dataset
           done
         done
       done
